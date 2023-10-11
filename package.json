@@ -1,0 +1,25 @@
+{
+  "name": "newboilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "NODE_ENV='development' react-scripts start",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allymitchem/newBoilerplate.git"
+  },
+  "author": "Allyson Mitchem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allymitchem/newBoilerplate/issues"
+  },
+  "homepage": "https://github.com/allymitchem/newBoilerplate#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  }
+}
