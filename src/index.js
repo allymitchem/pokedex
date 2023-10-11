@@ -1,5 +1,6 @@
-import React from 'React'
+import React from 'react'
 import ReactDom from 'react-dom/client'
+import {Main} from './components'
 
 
 
