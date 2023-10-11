@@ -1,5 +1,5 @@
 {
-  "name": "newboilerplate",
+  "name": "Pokedex",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allymitchem/newBoilerplate.git"
+    "url": "git+https://github.com/allymitchem/pokedex.git"
   },
   "author": "Allyson Mitchem",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/allymitchem/newBoilerplate/issues"
+    "url": "https://github.com/allymitchem/pokedex.git/issues"
   },
-  "homepage": "https://github.com/allymitchem/newBoilerplate#readme",
+  "homepage": "https://github.com/allymitchem/pokedex.git#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
