@@ -25,12 +25,13 @@ body {
 .title{
     display:flex;
     justify-content: center;
-    height: 20%;
-    border: 1px solid red;
+    margin-top: 10%;
+    /* border: 1px solid blue; */
 }
 
 #titleImage {
     margin:0 auto;
-    border: 1px solid red;
+    width:30rem;
+    
 }
     
