@@ -1,5 +1,6 @@
 import React from 'react' 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'  
+import {Title} from './'
 
 const Main = () => {
 
@@ -15,7 +16,7 @@ const Main = () => {
     }
     return(
         <div id ="main" style={backgroundImageStyle}>
-            {/* <h2>Main</h2> */}
+            <Title/>
         </div>
     )
 }
