@@ -1,6 +1,6 @@
 import React from 'react' 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'  
-import {Title, IndividualCard} from './'
+import {Title, IndividualCard, CardList} from './'
 
 const Main = () => {
 
@@ -17,7 +17,8 @@ const Main = () => {
     return(
         <div id ="main" style={backgroundImageStyle}>
             <Title/>
-            <IndividualCard/>
+            <CardList/>
+            
         </div>
     )
 }
