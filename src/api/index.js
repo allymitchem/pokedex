@@ -1,5 +1,13 @@
-const url = 'https://pokeapi.co/api/v2'
-export async function getAllCards() {
+const baseUrl = 'https://pokeapi.co/api/v2'
+const url = new URL(baseUrl)
+
+
+export async function getAllCards(params) {
+    if (params) {
+        if (params.name){
+            url.pathname = `/pokemon/${params.name}`
+        }
+    }
     const reqObj = {
         method:'GET',
         headers: {
@@ -7,7 +15,7 @@ export async function getAllCards() {
         }
     }
     try {
-        const response = await fetch(url+"/pokemon", reqObj)
+        const response = await fetch(url.toString(), reqObj)
         const result = await response.json()
         return result
     } catch (error){
@@ -23,4 +31,6 @@ const fetchData = async () => {
     }
 }
 
-fetchData()
+getAllCards({name: 'pikachu'})
+
+
