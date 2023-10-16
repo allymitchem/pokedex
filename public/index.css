@@ -34,4 +34,15 @@ body {
     width:30rem;
     
 }
+/* Card List */
+.cardList {
+    margin-left: 18%;
+    margin-right: 18%;
+    padding:2%;
+    border: 1px solid red;
+}
     
+/* Individual Cards */
+.individualCard {
+    border:1px solid black;
+}
