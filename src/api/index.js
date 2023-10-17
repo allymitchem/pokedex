@@ -15,13 +15,13 @@ const P = new Pokedex
     }
   }
 
-  getByName("pikachu")
-  .then((pokemonList) => {
-    console.log(pokemonList)
-  })
-  .catch((error) => {
-    console.error(error)
-  })
+//   getByName("pikachu")
+//   .then((pokemonList) => {
+//     console.log(pokemonList)
+//   })
+//   .catch((error) => {
+//     console.error(error)
+//   })
 
   async function getByAbility(ability){
     try {
@@ -31,9 +31,25 @@ const P = new Pokedex
         console.error(error)
     }
   }
-  getByAbility("stench")
-  .then((abilityList) => {
-    console.log(abilityList)
+//   getByAbility("stench")
+//   .then((abilityList) => {
+//     console.log(abilityList)
+//   })
+//   .catch((error) => {
+//     console.error(error)
+//   })
+
+  async function getByType(type){
+    try {
+        const typeList = await P.getTypeByName(type)
+        return typeList
+    } catch (error){
+        console.error(error)
+    }
+  }
+  getByType("ground")
+  .then((typeList) => {
+    console.log(typeList)
   })
   .catch((error) => {
     console.error(error)
