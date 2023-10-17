@@ -4,6 +4,7 @@
 import Pokedex from 'pokedex-promise-v2'
 const P = new Pokedex
 
+
   
   async function getByName(name){
     try {
@@ -21,6 +22,27 @@ const P = new Pokedex
   .catch((error) => {
     console.error(error)
   })
+
+  async function getByAbility(ability){
+    try {
+        const abilityList = await P.getAbilityByName(ability)
+        return abilityList
+    } catch (error){
+        console.error(error)
+    }
+  }
+  getByAbility("stench")
+  .then((abilityList) => {
+    console.log(abilityList)
+  })
+  .catch((error) => {
+    console.error(error)
+  })
+
+
+
+
+
 
 // export async function getAllCards(params) {
 //     if (params) {
