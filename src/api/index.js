@@ -1,36 +1,56 @@
-const baseUrl = 'https://pokeapi.co/api/v2'
-const url = new URL(baseUrl)
+// const baseUrl = 'https://pokeapi.co/api/v2'
+// const url = new URL(baseUrl)
 
+import Pokedex from 'pokedex-promise-v2'
+const P = new Pokedex
 
-export async function getAllCards(params) {
-    if (params) {
-        if (params.name){
-            url.pathname = `/pokemon/${params.name}`
-        }
-    }
-    const reqObj = {
-        method:'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }
+  
+  async function getByName(name){
     try {
-        const response = await fetch(url.toString(), reqObj)
-        const result = await response.json()
-        return result
+        const pokemonList = await P.getPokemonByName(name)
+        return pokemonList
     } catch (error){
         console.error(error)
     }
-}
-const fetchData = async () => {
-    try {
-        const data = await getAllCards()
-        console.log(data)
-    } catch (error) {
-        console.error(error)
-    }
-}
+  }
 
-getAllCards({name: 'pikachu'})
+  getByName("pikachu")
+  .then((pokemonList) => {
+    console.log(pokemonList)
+  })
+  .catch((error) => {
+    console.error(error)
+  })
+
+// export async function getAllCards(params) {
+//     if (params) {
+//         if (params.name){
+//             url.pathname = `/pokemon/${params.name}`
+//         }
+//     }
+//     const reqObj = {
+//         method:'GET',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         }
+//     }
+//     try {
+//         const response = await fetch(url.toString(), reqObj)
+//         const result = await response.json()
+//         return result
+//     } catch (error){
+//         console.error(error)
+//     }
+// }
+// const fetchData = async () => {
+//     try {
+//         const data = await getAllCards()
+//         console.log(data)
+//     } catch (error) {
+//         console.error(error)
+//     }
+// }
+
+// getAllCards({name: 'bulbasaur'})
 
 
