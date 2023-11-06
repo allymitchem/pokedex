@@ -47,13 +47,13 @@ const P = new Pokedex
         console.error(error)
     }
   }
-  getByType("ground")
-  .then((typeList) => {
-    console.log(typeList)
-  })
-  .catch((error) => {
-    console.error(error)
-  })
+//   getByType("ground")
+//   .then((typeList) => {
+//     console.log(typeList)
+//   })
+//   .catch((error) => {
+//     console.error(error)
+//   })
 
 
 
