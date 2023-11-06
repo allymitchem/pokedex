@@ -6,7 +6,7 @@ const P = new Pokedex
 
 
   
-  async function getByName(name){
+  export async function getByName(name){
     try {
         const pokemonList = await P.getPokemonByName(name)
         return pokemonList
@@ -39,7 +39,7 @@ const P = new Pokedex
 //     console.error(error)
 //   })
 
-  async function getByType(type){
+  export async function getByType(type){
     try {
         const typeList = await P.getTypeByName(type)
         return typeList
