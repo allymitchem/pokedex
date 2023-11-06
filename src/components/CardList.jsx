@@ -1,11 +1,13 @@
 import React from "react";
 import IndividualCard from "./IndividualCard";
+import PokemonSearch from "./PokemonSearch";
 
 const CardList = () => {
     return (
         <div className="cardList">
-        <h3>List</h3>
+        <PokemonSearch/>
        <IndividualCard/>
+    
         </div>
     )
 }
