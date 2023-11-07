@@ -10,7 +10,7 @@ const PokemonSearch = () => {
     const [pokemon, setPokemon] = useState(null)
 
     useEffect(()=> {
-        const delay = 500
+        const delay = 200
         let timer
 
         const performSearch = async () => {
@@ -64,6 +64,7 @@ const PokemonSearch = () => {
             
         {pokemon ? (
             <div className="individualCard">
+                <img className="pokemonImage" src ={pokemon.sprites.front_default} alt ={pokemon.name}/>
                 <h2>{pokemon.name}</h2>
             </div> ) : (
                 <p>no data available</p>

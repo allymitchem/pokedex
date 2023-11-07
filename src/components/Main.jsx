@@ -13,7 +13,7 @@ const Main = () => {
         width: '100vw'   
     }
 
-    const [selectedPokemon, setSelectedPokemon] = useState([])
+    // const [selectedPokemon, setSelectedPokemon] = useState([])
     // const handleSearch = async(name)=>{
     //     try {
     //         const pokemon = await getByName(name)
