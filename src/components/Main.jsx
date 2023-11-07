@@ -1,6 +1,7 @@
-import React from 'react' 
+import React, {useState} from 'react' 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'  
-import {Title, IndividualCard, CardList} from './'
+import { getByName } from '../api'
+import {Title, IndividualCard, CardList, PokemonSearch} from './'
 
 const Main = () => {
 
@@ -9,15 +10,24 @@ const Main = () => {
         backgroundSize: 'cover',
         // backgroundAttachment: 'fixed',
         height: '110vh',
-        width: '100vw',
-        
-        
-        
+        width: '100vw'   
     }
+
+    // const [selectedPokemon, setSelectedPokemon] = useState([])
+    // const handleSearch = async(name)=>{
+    //     try {
+    //         const pokemon = await getByName(name)
+    //         setSelectedPokemon([pokemon])
+    //     }catch (error){
+    //         console.error(error)
+    //     }
+    // }
     return(
         <div id ="main" style={backgroundImageStyle}>
             <Title/>
-            <CardList/>
+            <PokemonSearch />
+            {/* <IndividualCard/> */}
+            {/* <CardList /> */}
             
         </div>
     )
