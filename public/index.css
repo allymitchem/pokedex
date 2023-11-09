@@ -56,6 +56,7 @@ body {
     /* height:330px; */
     /* background-color:#FAE261; */
     margin-bottom: none;
+    margin-top: 2%;
     border: 1px solid red;
     
 }
@@ -75,10 +76,16 @@ body {
 
 /* Search Bar */
 .searchBar {
-    margin-top: 2%;
+    margin-top: 1%;
    justify-self: center;
    font-family: 'Press Start 2P';
    border-radius: 5px;
+   color:rgb(50, 47, 47);
+   padding-left: 1% ;
+   padding-bottom: 2px;
+   height:20px;
+
+
 }
 
 /* Pokedex Container */
