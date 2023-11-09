@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     height:100%;
     width:100%;
@@ -46,8 +48,10 @@ body {
     
 /* Individual Cards */
 .individualCard {
+    /* margin-top:250%;
+    margin-right:80%; */
     /* border:10px solid #FFCD01; */
- box-shadow: 0 10px 20px rgba(0, 0, 0, 0.993);
+ /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.993); */
     /* width:200px; */
     /* height:330px; */
     /* background-color:#FAE261; */
@@ -76,3 +80,13 @@ body {
 /* .pokedexContainer {
     background-image:url("https://res.cloudinary.com/fsa2/image/upload/v1699561269/portfolio%20site%20images/Project%20Images/pokedexWithLandscape_vfu83g.png") ;
 } */
+
+.pokemonImage{
+    margin-top: 125%;
+    margin-right: 55%;
+    height:10rem;
+}
+
+.pokemonName{
+    color:rgb(35, 33, 33);
+}

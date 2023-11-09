@@ -66,7 +66,7 @@ const PokemonSearch = () => {
         {pokemon ? (
             <div className="individualCard">
                 <img className="pokemonImage" src ={pokemon.sprites.front_default} alt ={pokemon.name}/>
-                <h2>{pokemon.name}</h2>
+                <h2 className="pokemonName">{pokemon.name}</h2>
             </div> ) : (
                 <p>no data available</p>
             )}
