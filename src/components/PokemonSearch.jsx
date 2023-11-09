@@ -61,7 +61,7 @@ const PokemonSearch = () => {
             <input 
             className="searchBar"
             type ="text"
-            placeholder=" 🔍 Search... "
+            placeholder="🔍 Search..."
             value ={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -69,8 +69,21 @@ const PokemonSearch = () => {
             <div className="pokedexContainer">
         {searchTerm && pokemon && (
             <div className="individualCard">
-                <img className="pokemonImage" src ={pokemon.sprites.front_default} alt ={pokemon.name}/>
+                <div className="hp">
                 <h2 className="pokemonName">{pokemon.name}</h2>
+                {pokemon.stats.map((stat)=> {
+                    if (stat.stat.name === "hp"){
+                        return(
+                            <p  key={stat.stat.name}>
+                                {stat.base_stat} HP
+                            </p>
+                        )
+                    }
+                    return null
+                })}
+                
+                </div>
+                <img className="pokemonImage" src ={pokemon.sprites.front_default} alt ={pokemon.name}/>
                 <h3 className="pokemonId" >{pokemon.id}</h3>
                 
             </div> 
