@@ -55,6 +55,8 @@ body {
     /* width:200px; */
     /* height:330px; */
     /* background-color:#FAE261; */
+    margin-bottom: none;
+    border: 1px solid red;
     
 }
 /* Container */
@@ -85,8 +87,26 @@ body {
     margin-top: 125%;
     margin-right: 55%;
     height:10rem;
+    margin-bottom: none;
+    border: 1px solid blue;
 }
 
 .pokemonName{
     color:rgb(35, 33, 33);
+    font-family: 'Press Start 2P';
+    font-size:12px;
+    margin-top: -25%;
+    /* margin-bottom: 300%; */
+    border: 1px solid green;
+   display: flex;
+    justify-content: flex-end;
+   
+}   
+
+.pokemonId{
+    font-family: 'Press Start 2P';
+    color:rgb(35, 33, 33);
+    border:3px solid yellow;
+    margin-top: 70%;
+    margin-left: 5%;
 }
