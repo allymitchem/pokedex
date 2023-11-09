@@ -85,7 +85,7 @@ const PokemonSearch = () => {
                 </div>
                 <img className="pokemonImage" src ={pokemon.sprites.front_default} alt ={pokemon.name}/>
                 <h3 className="pokemonId" >{pokemon.id}</h3>
-                
+                <p> Type: {pokemon.types.map((type)=> type.type.name).join('')}</p>
             </div> 
             // ) : (
             //     <p >no data available</p>
