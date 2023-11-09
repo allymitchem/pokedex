@@ -46,10 +46,33 @@ body {
     
 /* Individual Cards */
 .individualCard {
-    border:10px solid #FFCD01;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.993);
-    width:200px;
-    height:330px;
-    background-color:#FAE261;
+    /* border:10px solid #FFCD01; */
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.993);
+    /* width:200px; */
+    /* height:330px; */
+    /* background-color:#FAE261; */
+    
 }
+/* Container */
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url("https://res.cloudinary.com/fsa2/image/upload/v1699562297/portfolio%20site%20images/Project%20Images/smallPokedexLandscape_diiuax.png") ;
+    
+   
+    height:80vh;
+    /* width:40vw; */
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* Search Bar */
+.searchBar {
+   justify-self: center;
+}
+
+/* Pokedex Container */
+/* .pokedexContainer {
+    background-image:url("https://res.cloudinary.com/fsa2/image/upload/v1699561269/portfolio%20site%20images/Project%20Images/pokedexWithLandscape_vfu83g.png") ;
+} */

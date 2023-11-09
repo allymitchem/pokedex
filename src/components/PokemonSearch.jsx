@@ -52,16 +52,17 @@ const PokemonSearch = () => {
     
 
     return (
-        <div>
-            <h3>searchhhh</h3>
+        <div className="mainContainer">
+            {/* <h3>searchhhh</h3> */}
             <input 
+            className="searchBar"
             type ="text"
             placeholder=" 🔍 Search "
             value ={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             />
             {/* <button onClick={handleSearch}>Search</button> */}
-            
+            <div className="pokedexContainer">
         {pokemon ? (
             <div className="individualCard">
                 <img className="pokemonImage" src ={pokemon.sprites.front_default} alt ={pokemon.name}/>
@@ -69,7 +70,7 @@ const PokemonSearch = () => {
             </div> ) : (
                 <p>no data available</p>
             )}
-
+            </div>
             
         </div>
 
