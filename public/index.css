@@ -75,7 +75,10 @@ body {
 
 /* Search Bar */
 .searchBar {
+    margin-top: 2%;
    justify-self: center;
+   font-family: 'Press Start 2P';
+   border-radius: 5px;
 }
 
 /* Pokedex Container */
@@ -84,7 +87,7 @@ body {
 } */
 
 .pokemonImage{
-    margin-top: 125%;
+    margin-top: 110%;
     margin-right: 55%;
     height:10rem;
     margin-bottom: none;
@@ -100,6 +103,9 @@ body {
     border: 1px solid green;
    display: flex;
     justify-content: flex-end;
+    /* background-color: #E3E3E3; */
+   margin-left: 5%;
+   /* height:200%; */
    
 }   
 

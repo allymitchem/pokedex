@@ -61,7 +61,7 @@ const PokemonSearch = () => {
             <input 
             className="searchBar"
             type ="text"
-            placeholder=" 🔍 Search "
+            placeholder=" 🔍 Search... "
             value ={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             />
