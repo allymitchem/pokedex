@@ -1,24 +1,28 @@
 import React, {useEffect, useState} from "react";
 import {getByName} from "../api/index"
-import CardList from "./CardList";
-import IndividualCard from "./IndividualCard";
+// import CardList from "./CardList";
+// import IndividualCard from "./IndividualCard";
+
 
 
 const PokemonSearch = () => {
 
     const [searchTerm, setSearchTerm] = useState('')
     const [pokemon, setPokemon] = useState(null)
+    const [lastSearchedPokemon, setLastSearchedPokemon] = useState(null)
 
     useEffect(()=> {
-        const delay = 200
+        const delay = 500
         let timer
 
         const performSearch = async () => {
             try{
                 const data = await getByName(searchTerm)
+                setLastSearchedPokemon(data)
                 setPokemon(data)
             } catch (error){
                 console.error(error)
+                // setPokemon(null)
                 // setPokemon(null) --> clears previous data if error occurs
             }
         }
@@ -52,24 +56,41 @@ const PokemonSearch = () => {
     
 
     return (
-        <div>
-            <h3>searchhhh</h3>
+        <div className="mainContainer">
+            {/* <h3>searchhhh</h3> */}
             <input 
+            className="searchBar"
             type ="text"
-            placeholder=" 🔍 Search "
+            placeholder="🔍 Search..."
             value ={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             />
             {/* <button onClick={handleSearch}>Search</button> */}
-            
-        {pokemon ? (
+            <div className="pokedexContainer">
+        {searchTerm && pokemon && (
             <div className="individualCard">
+                <div className="hp">
+                <h2 className="pokemonName">{pokemon.name}</h2>
+                {pokemon.stats.map((stat)=> {
+                    if (stat.stat.name === "hp"){
+                        return(
+                            <p  key={stat.stat.name}>
+                                {stat.base_stat} HP
+                            </p>
+                        )
+                    }
+                    return null
+                })}
+                
+                </div>
                 <img className="pokemonImage" src ={pokemon.sprites.front_default} alt ={pokemon.name}/>
-                <h2>{pokemon.name}</h2>
-            </div> ) : (
-                <p>no data available</p>
+                <h3 className="pokemonId" >{pokemon.id}</h3>
+                
+            </div> 
+            // ) : (
+            //     <p >no data available</p>
             )}
-
+             </div>
             
         </div>
 

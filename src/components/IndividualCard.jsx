@@ -1,27 +1,27 @@
-import React, {useEffect, useState} from "react";
-import { getAllCards } from "../api";
+// import React, {useEffect, useState} from "react";
+// import { getAllCards } from "../api";
 
 
-const IndividualCard = ({pokemon}) => {
+// const IndividualCard = ({pokemon}) => {
    
-   console.log("individual: ", pokemon)
+//    console.log("individual: ", pokemon)
    
-    return(
-        <div className="individualCard">
-            <h2>heree</h2>
-           <h2>{pokemon.name}</h2>
-            {/* NEEDS:
-                -Name
-                -Height?
-                -Weight
-                -HP
-                -Type(circular image)
-                -Image
-                -Moves
-             */}
-        </div>
+//     return(
+//         <div className="individualCard">
+//             <h2>heree</h2>
+//            <h2>{pokemon.name}</h2>
+//             {/* NEEDS:
+//                 -Name
+//                 -Height?
+//                 -Weight
+//                 -HP
+//                 -Type(circular image)
+//                 -Image
+//                 -Moves
+//              */}
+//         </div>
         
-    )
-}
+//     )
+// }
 
-export default IndividualCard;
+// export default IndividualCard;
