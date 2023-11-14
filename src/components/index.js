@@ -1,5 +1,5 @@
 export {default as Main} from './Main'
 export {default as Title} from './Title'
-export {default as IndividualCard} from './IndividualCard'
-export {default as CardList} from './CardList'
 export {default as PokemonSearch} from './PokemonSearch'
+// export {default as IndividualCard} from './IndividualCard'
+// export {default as CardList} from './CardList'
