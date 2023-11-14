@@ -1,145 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
-    height:100%;
-    width:100%;
-    margin: 0;
-    overflow: hidden;
-    justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
 }
 
 #app {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-   
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #main {
-   height:100vh;
-   display: flex;
-   flex-direction: column;
-   
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Title */
-.title{
-    display:flex;
-    justify-content: center;
-    margin-top: 2%;
-    /* border: 1px solid blue; */
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
 
 #titleImage {
-    margin:0 auto;
-    width:30rem;
-    
+  margin: 0 auto;
+  width: 30rem;
 }
 /* Card List */
-.cardList {
+/* .cardList {
     margin-left: 18%;
     margin-right: 18%;
     padding:2%;
     border: 1px solid red;
     display: flex;
     justify-content: center;
-}
-    
+} */
+
 /* Individual Cards */
 .individualCard {
-    /* margin-top:250%;
-    margin-right:80%; */
-    /* border:10px solid #FFCD01; */
- /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.993); */
-    /* width:200px; */
-    /* height:330px; */
-    /* background-color:#FAE261; */
-    margin-bottom: none;
-    margin-top: 2%;
-    border: 1px solid red;
-    width: 20vw;
-    
+  margin-bottom: none;
+  margin-top: 2%;
+  width: 20vw;
 }
 /* Container */
-.mainContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image:url("https://res.cloudinary.com/fsa2/image/upload/v1699562297/portfolio%20site%20images/Project%20Images/smallPokedexLandscape_diiuax.png") ;
-    
-   
-    height:80vh;
-    /* width:40vw; */
-   background-repeat: no-repeat;
-   background-position: center;
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/fsa2/image/upload/v1699562297/portfolio%20site%20images/Project%20Images/smallPokedexLandscape_diiuax.png");
+
+  height: 80vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Search Bar */
 .searchBar {
-    margin-top: 1%;
-   justify-self: center;
-   font-family: 'Press Start 2P';
-   border-radius: 5px;
-   color:rgb(50, 47, 47);
-   padding-left: 1% ;
-   padding-bottom: 2px;
-   height:20px;
-
-
+  margin-top: 1%;
+  justify-self: center;
+  font-family: "Press Start 2P";
+  border-radius: 5px;
+  color: rgb(50, 47, 47);
+  padding-left: 1%;
+  padding-bottom: 2px;
+  height: 20px;
 }
 
-/* Pokedex Container */
-/* .pokedexContainer {
-    background-image:url("https://res.cloudinary.com/fsa2/image/upload/v1699561269/portfolio%20site%20images/Project%20Images/pokedexWithLandscape_vfu83g.png") ;
-} */
+.hp {
+  font-family: "Press Start 2P";
+  font-size: 10px;
+  color: rgb(35, 33, 33);
+  /* border: 3px solid hotpink; */
+  margin-top: 58%;
+  margin-bottom: none;
+  margin-left: 11%;
+  padding-right: 5%;
 
-
-.hp{
-    font-family: 'Press Start 2P';
-    font-size: 10px ;
-    color:rgb(35, 33, 33);
-    border: 3px solid hotpink;
-    margin-top: 60%;
-    margin-bottom: none;
-    margin-left: 12%;;
-    /* margin-right: 50%; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width:65%;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
 }
 
-.pokemonImage{
-    /* margin-top: -110%; */
-    margin-left: 20%;
-    margin-top:-10%;
-    height:9rem;
-    margin-bottom: none;
-    border: 1px solid blue;
+.pokemonImage {
+  margin-left: 20%;
+  margin-top: -10%;
+  height: 9rem;
+  margin-bottom: none;
+  /* border: 1px solid blue; */
 }
-.pokemonName{
-    color:rgb(35, 33, 33);
-    font-family: 'Press Start 2P';
-    font-size:11px;
-    /* margin-top: -15%; */
-   /* margin-right: 22%; */
-    /* margin-bottom: 300%; */
-    border: 1px solid green;
-   display: flex;
-    justify-content: flex-end;
-    /* background-color: #E3E3E3; */
-   /* margin-left: 5%; */
-   /* height:200%; */
-   
-}   
+.pokemonName {
+  color: rgb(35, 33, 33);
+  font-family: "Press Start 2P";
+  font-size: 11px;
 
-.pokemonId{
-    font-family: 'Press Start 2P';
-    color:rgb(35, 33, 33);
-    border:3px solid yellow;
-    margin-top: 37%;
-    margin-left: 20%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5%;
+}
+
+.pokemonId {
+  font-family: "Press Start 2P";
+  color: rgb(35, 33, 33);
+  /* border:3px solid yellow; */
+  margin-top: 35%;
+  margin-left: 28%;
 }
